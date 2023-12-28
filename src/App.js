@@ -1,10 +1,16 @@
+import { Header,Footer } from './components';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
+    <main>
+      <Header />
 
-    </div>
+      <Footer />
+
+
+    </main>
   );
 }
 
