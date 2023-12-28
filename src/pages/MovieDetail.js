@@ -1,7 +1,7 @@
 export const MovieDetail = () => {
   return (
-    <div>
+    <main>
       
-    </div>
+    </main>
   )
 }

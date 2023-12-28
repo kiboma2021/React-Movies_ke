@@ -1,8 +1,8 @@
 export const MovieList = () => {
   return (
-    <div>
+    <main>
       
-    </div>
+    </main>
   )
 }
 

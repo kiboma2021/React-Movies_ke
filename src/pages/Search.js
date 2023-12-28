@@ -1,7 +1,7 @@
 export const Search = () => {
   return (
-    <div>
+    <main>
       
-    </div>
+    </main>
   )
 }

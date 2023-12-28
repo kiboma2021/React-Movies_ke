@@ -1,7 +1,7 @@
 export const PageNotFound = () => {
   return (
-    <div>
+    <main>
       
-    </div>
+    </main>
   )
 }
