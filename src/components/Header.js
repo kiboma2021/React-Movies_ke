@@ -1,7 +1,12 @@
 import { Link,NavLink } from "react-router-dom"
 import Logo from '../assets/logo.png'
+import { useState } from "react"
 
 export const Header = () => {
+
+  const [hidden, setHidden] = useState(true);
+
+
   const activeClass = "block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
   const innactiveClass = "block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
   return (
@@ -35,7 +40,7 @@ export const Header = () => {
               </svg>
           </button>
         </div>
-          <div className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-search">
+          <div className={`${hidden?"hidden":""}  items-center justify-between w-full md:flex md:w-auto md:order-1`} id="navbar-search">
             <div className="relative mt-3 md:hidden">
               <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg className="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
