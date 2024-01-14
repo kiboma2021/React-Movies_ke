@@ -5,9 +5,12 @@ import { useEffect, useState } from "react"
 export const Header = () => {
 
   const [hidden, setHidden] = useState(true);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(JSON.parse(localStorage.getItem("darkMode")) || false);
+
 
   useEffect(() => {
+    localStorage.setItem("darkMode", JSON.stringify(darkMode));
+
     if(darkMode){
       document.documentElement.classList.add("dark")
 
