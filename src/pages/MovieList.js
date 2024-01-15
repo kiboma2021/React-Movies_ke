@@ -14,10 +14,6 @@ export const MovieList = ({apiPath}) => {
             )) }
             
           </div>
-
-
-
-
         </section>
       
     </main>
