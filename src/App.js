@@ -3,7 +3,7 @@ import { AllRoutes } from './routes/AllRoutes';
 
 function App() {
   return (
-    <main>
+    <main className='dark:bg-slate-700'>
       <Header />
       <AllRoutes />
 
