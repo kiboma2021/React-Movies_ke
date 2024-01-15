@@ -10,6 +10,9 @@ export const Search = ({apiPath}) => {
 
   return (
     <main>
+      <section className="text-3xl py-2 text-gray-700 dark:text-white ">
+        <p>{movies.length === 0 ? `No result found for "${queryTerm}"`:`Results for "${queryTerm}"`}  </p>
+      </section>
         <section>
           <div className='flex flex-wrap gap-4 mt-5 '>
             { movies && movies.map((movie) => (
