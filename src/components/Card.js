@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom'
+import MovieImg from '../assets/action.jpeg'
 
 export const Card = ({movie}) => {
   const {id,title,overview,poster_path }=movie;
-  const image = `https://image.tmdb.org/t/p/w500/${poster_path}`;
+  const image = poster_path? `https://image.tmdb.org/t/p/w500/${poster_path}`: MovieImg;
   return (
     <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
       <Link to={`/movie/${id}`}>
