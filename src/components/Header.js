@@ -80,7 +80,9 @@ export const Header = () => {
               <li>
                 <NavLink to="movies/upcoming" className={({isActive})=>isActive? activeClass:innactiveClass }>Upcoming</NavLink>
               </li>
-
+              <li>
+                <NavLink to="movies/trending" className={({isActive})=>isActive? activeClass:innactiveClass }>Trending</NavLink>
+              </li>
             </ul>
           </div>
         </div>
