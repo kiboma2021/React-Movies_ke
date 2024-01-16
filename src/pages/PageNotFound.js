@@ -5,11 +5,14 @@ export const PageNotFound = () => {
   return (
     <main>
         <section className="flex flex-col justify-center">
-          <div className="flex flex-col max-w-2xl">
-            <p className="flex justify-center">Error 404, Page not found</p>
-            <img src={pageNotFound} alt="Error 404!!!" />
+          <div className="flex flex-col max-w-full justify-center my-5 ">
+            <p className="flex justify-center my-5 dark:text-white text-2xl">Error 404, Page not found</p>
+            <div className="flex justify-center">
+              <img className="max-w-lg" src={pageNotFound} alt="Error 404!!!" />
+            </div>
+            
           </div>
-          <div className="flex justify-center">
+          <div className="flex justify-center my-3">
             <Button>Back to Home page</Button>
           </div>
         </section>
