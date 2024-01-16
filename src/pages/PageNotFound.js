@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom"
 import { Button } from "../components"
 import pageNotFound from "../assets/pageNotFound.jpeg"
+import { useEffect } from "react"
 
 export const PageNotFound = () => {
+
+  useEffect(() => {
+    document.title = "404 - Page not found!";
+  });
+
   return (
     <main>
         <section className="flex flex-col justify-center">

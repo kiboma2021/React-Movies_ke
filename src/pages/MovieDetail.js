@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import MovieImg from '../assets/movieImage.jpeg'
 import { useParams } from 'react-router-dom'
 import { Button } from '../components'
+
 export const MovieDetail = () => {
   const [movie, setMovie] = useState({})
   const params = useParams();
@@ -18,6 +19,10 @@ export const MovieDetail = () => {
     }
     fetchMovie();
   },[])
+
+  useEffect(() =>{
+    document.title=`${movie.title} /Movie`;
+  });
   
   return (
     <main>
