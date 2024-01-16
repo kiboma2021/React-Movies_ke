@@ -8,7 +8,7 @@ export const MovieList = ({apiPath}) => {
   return (
     <main>
         <section>
-          <div className='flex flex-wrap gap-4 mt-5 '>
+          <div className='flex flex-wrap gap-4 mt-5 justify-center'>
             { movies && movies.map((movie) => (
               <Card key={movie.id} movie={movie} />
             )) }
