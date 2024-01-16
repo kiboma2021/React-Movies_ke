@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import MovieImg from '../assets/action.jpeg'
+import MovieImg from '../assets/movieImage.jpeg'
 
 export const Card = ({movie}) => {
   const {id,title,overview,poster_path }=movie;
