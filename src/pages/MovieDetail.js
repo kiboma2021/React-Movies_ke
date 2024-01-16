@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import MovieImg from '../assets/movieImage.jpeg'
 import { useParams } from 'react-router-dom'
-
+import { Button } from '../components'
 export const MovieDetail = () => {
   const [movie, setMovie] = useState({})
   const params = useParams();
@@ -34,7 +34,7 @@ export const MovieDetail = () => {
           </p>
           <div className='flex flex-wrap gap-5 py-3 my-3'>
             {movie.genres && movie.genres.map((genre)=>(
-              <span className='border-2 border-grey p-2 mr-5 rounded-lg' >{genre.name} </span>
+              <span className='border-2 border-grey p-2 mr-5 rounded-lg' key={genre.id} >{genre.name} </span>
             )) }
             
           </div>
@@ -52,7 +52,9 @@ export const MovieDetail = () => {
           <p className='text-xl py-2'><span className='font-bold'>Budget: </span>  {movie.budget} </p>
           <p className='text-xl py-2'><span className='font-bold'>Revenue: </span> {movie.revenue} </p>
           <p className='text-xl py-2'><span className='font-bold'>Release Date: </span> {movie.release_date}</p>
-          <p className='text-xl py-2'><span className='font-bold'>IMDB Code: </span> {movie.imdb_id}</p>
+          <p className='text-xl py-2'><span className='font-bold'>IMDB Code: </span><a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank'>{movie.imdb_id}</a> </p>
+          <Button><a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank'>Watch Official Trailer</a></Button>
+          
         </div>   
       </section>
   
