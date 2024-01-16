@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import { Button } from "../components"
 import pageNotFound from "../assets/pageNotFound.jpeg"
 
@@ -13,7 +14,10 @@ export const PageNotFound = () => {
             
           </div>
           <div className="flex justify-center my-3">
-            <Button>Back to Home page</Button>
+            <Link to="/">
+              <Button>Back to Home page</Button>
+            </Link>
+            
           </div>
         </section>
       
