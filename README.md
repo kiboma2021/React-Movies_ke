@@ -3,7 +3,7 @@
 <!-- PROJECT DESCRIPTION -->
 ![Alt text](<Screenshot from 2024-01-17 07-56-05.png>)
 
-### 📖 [React] <a name="about-project"></a>
+### 📖 Project Description <a name="about-project"></a>
 
 > The application features a curated collection of movies categorized as popular, top-rated, upcoming, and trending. Movie data is retrieved through an API from TMDB [https://www.themoviedb.org/]. Users can search for specific movies, view detailed information about a selected movie, and access an external link to watch the official trailer. The site provides the option to navigate in either light or dark mode.
 
@@ -31,5 +31,5 @@
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Udemy: React Js Master class
-> TMDB[https://www.themoviedb.org/]
+- Udemy: React Js Master class
+- TMDB[https://www.themoviedb.org/]
