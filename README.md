@@ -16,7 +16,7 @@
 
 ## 🚀 <a href="https://movie-ke.netlify.app/" target="_blank">Live Demo Link</a>
 
-## 🚀 <a href="https://github.com/kiboma2021/React-Movies_ke" target="_blank">Source Code</a>
+## :electron: <a href="https://github.com/kiboma2021/React-Movies_ke" target="_blank">Source Code</a>
 
 ## 👥 Authors <a name="authors"></a>
 
