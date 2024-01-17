@@ -18,7 +18,7 @@ export const MovieDetail = () => {
       setMovie(json)
     }
     fetchMovie();
-  },[])
+  },[params.id])
 
   useEffect(() =>{
     document.title=`${movie.title} /Movie`;
@@ -50,15 +50,15 @@ export const MovieDetail = () => {
               </svg>
               <p className="ms-2 text-xl dark:text-white">{movie.vote_average}</p>
               <span className="w-1 h-1 mx-1.5 bg-gray-500 rounded-full dark:bg-gray-400"></span>
-              <a href="#" className="text-xl">{movie.vote_count} reviews</a>
+              <a href="/" rel='noreferrer' className="text-xl">{movie.vote_count} reviews</a>
           </div>
 
           <p className='text-xl py-2'><span className='font-bold'>Runtime: </span> {movie.runtime} </p>
           <p className='text-xl py-2'><span className='font-bold'>Budget: </span>  {movie.budget} </p>
           <p className='text-xl py-2'><span className='font-bold'>Revenue: </span> {movie.revenue} </p>
           <p className='text-xl py-2'><span className='font-bold'>Release Date: </span> {movie.release_date}</p>
-          <p className='text-xl py-2'><span className='font-bold'>IMDB Code: </span><a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank'>{movie.imdb_id}</a> </p>
-          <Button><a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank'>Watch Official Trailer</a></Button>
+          <p className='text-xl py-2'><span className='font-bold'>IMDB Code: </span><a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank' rel='noreferrer'>{movie.imdb_id}</a> </p>
+          <Button><a href={`https://www.imdb.com/title/${movie.imdb_id}`} target='_blank' rel='noreferrer'>Watch Official Trailer</a></Button>
           
         </div>   
       </section>
